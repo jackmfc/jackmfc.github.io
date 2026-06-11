@@ -3,168 +3,77 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Mayfair — Engineering Tools</title>
+<title>G C Gebert — Engineering Tools</title>
 <style>
-  :root{--bg:#0f1722;--panel:#16202e;--panel2:#1d2a3a;--line:#2a3a4f;--txt:#e8eef5;--muted:#9fb0c3;--accent:#3da9fc;--peach:#f4b482;--good:#34c77b;}
+  :root{--bg:#0f1722;--panel:#16202e;--panel2:#1d2a3a;--line:#2a3a4f;--txt:#e8eef5;--muted:#9fb0c3;--accent:#3da9fc;--peach:#f4b482;}
   *{box-sizing:border-box}
-  body{margin:0;font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--txt);min-height:100vh}
-  .top{padding:30px 28px 10px;text-align:center}
-  .top img{height:48px;margin-bottom:6px}
-  .top h1{font-size:22px;margin:14px 0 4px;font-weight:680;letter-spacing:.2px}
-  .top p{color:var(--muted);font-size:14px;margin:0}
-  .wrap{max-width:1000px;margin:0 auto;padding:24px 28px 80px}
-  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:20px;margin-top:18px}
+  body{margin:0;font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--txt);min-height:100vh}
+  .top{padding:34px 28px 6px;text-align:center}
+  .top img{height:54px;background:#fff;padding:8px 14px;border-radius:10px}
+  .top h1{font-size:20px;margin:18px 0 2px;font-weight:680;letter-spacing:.2px}
+  .top p{color:var(--muted);font-size:13.5px;margin:0}
+  .wrap{max-width:1080px;margin:0 auto;padding:24px 28px 70px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
   a.card{display:flex;flex-direction:column;text-decoration:none;color:inherit;background:var(--panel);border:1px solid var(--line);
-         border-radius:14px;padding:22px 22px 20px;transition:.15s;position:relative;overflow:hidden}
-  a.card:hover{border-color:var(--peach);transform:translateY(-2px);box-shadow:0 12px 30px rgba(0,0,0,.35)}
-  a.card .bar{position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--peach);opacity:.0;transition:.15s}
+         border-radius:12px;padding:16px 17px;transition:.13s;position:relative;overflow:hidden}
+  a.card:hover{border-color:var(--peach);transform:translateY(-2px);box-shadow:0 10px 26px rgba(0,0,0,.32)}
+  a.card .bar{position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--peach);opacity:0;transition:.13s}
   a.card:hover .bar{opacity:1}
-  .badge{display:inline-block;font-size:11px;font-weight:600;color:#1a1206;background:var(--peach);border-radius:6px;padding:2px 8px;margin-bottom:12px;align-self:flex-start}
-  a.card h2{font-size:17px;margin:0 0 8px;font-weight:650}
-  a.card p{color:var(--muted);font-size:13.5px;margin:0 0 16px;flex:1}
-  .open{color:var(--accent);font-weight:650;font-size:14px}
+  .badge{display:inline-block;font-size:10px;font-weight:600;color:#1a1206;background:var(--peach);border-radius:5px;padding:2px 7px;margin-bottom:10px;align-self:flex-start;letter-spacing:.02em}
+  a.card h2{font-size:15.5px;margin:0 0 5px;font-weight:650;line-height:1.25}
+  a.card p{color:var(--muted);font-size:12.5px;margin:0 0 12px;flex:1;line-height:1.45}
+  .open{color:var(--accent);font-weight:650;font-size:13px}
   a.card:hover .open{color:var(--peach)}
-  .foot{text-align:center;color:var(--muted);font-size:12px;margin-top:36px;line-height:1.7}
-  .foot .priv{color:var(--good)}
-  .soon{opacity:.5;pointer-events:none}
-  .soon .open{color:var(--muted)}
+  .foot{text-align:center;color:var(--muted);font-size:12px;margin-top:34px;line-height:1.7}
 </style>
 </head>
 <body>
   <div class="top">
-    <img id="logo" alt="Mayfair Compliance Solutions">
+    <img id="logo" alt="G C Gebert Consulting Engineers">
     <h1>Engineering Tools</h1>
-    <p>Compliance &amp; design calculators — pick a tool to begin</p>
+    <p>Design &amp; compliance calculators — pick a tool</p>
   </div>
 
   <div class="wrap">
     <div class="grid">
 
-      <a class="card" href="/box-gutter-verifier/">
-        <span class="bar"></span>
-        <span class="badge">AS/NZS 3500.3 · NCC</span>
-        <h2>Curved Box Gutter — Performance Solution</h2>
-        <p>Verify a plan-curved box gutter as an NCC Performance Solution: design flow from BoM IFD, superelevation &amp; freeboard around the curve, overflow provision, and a 2022/2025 dual-edition PS report.</p>
-        <span class="open">Open →</span>
-      </a>
+      <a class="card" href="/box-gutter-verifier/"><span class="bar"></span><span class="badge">AS/NZS 3500.3 · NCC</span><h2>Curved Box Gutter PS</h2><p>Plan-curved box gutter as an NCC Performance Solution.</p><span class="open">Open →</span></a>
 
-      <a class="card" href="/slab-deflection/">
-        <span class="bar"></span>
-        <span class="badge">AS 3600</span>
-        <h2>Concrete Slab Deflection</h2>
-        <p>Detailed deflection of one-way / two-way slabs and beams: effective stiffness (I<sub>ef</sub>), immediate + long-term, selectable supports, and a cantilever-with-backspan option. UDL over the span.</p>
-        <span class="open">Open →</span>
-      </a>
+      <a class="card" href="/bom-rainfall/"><span class="bar"></span><span class="badge">BoM IFD2016</span><h2>BoM Design Rainfall</h2><p>Design rainfall intensities (1% … 63.2% AEP) for a site.</p><span class="open">Open →</span></a>
 
-      <a class="card" href="/geotech-analyser/">
-        <span class="bar"></span>
-        <span class="badge">AS 2870</span>
-        <h2>Geotech Report Analyser</h2>
-        <p>Drag-drop a geotechnical PDF and pull out the key parameters — site class, y<sub>s</sub>, footings, bearing, soil profile, groundwater, hazards. <span class="priv">Read entirely in your browser — nothing uploaded.</span></p>
-        <span class="open">Open →</span>
-      </a>
+      <a class="card" href="/eaves-gutter/"><span class="bar"></span><span class="badge">AS/NZS 3500.3</span><h2>Eaves Gutter &amp; Downpipe</h2><p>Design flow, downpipes required &amp; gutter capacity.</p><span class="open">Open →</span></a>
 
-      <a class="card" href="/tree-influence/">
-        <span class="bar"></span>
-        <span class="badge">AS 2870 · Appendix H</span>
-        <h2>Tree Influence Check</h2>
-        <p>Screen a tree's proximity to footings on reactive soil: required clearance D = ratio × mature height, by site reactivity and single/row arrangement — plus a rigid-raft differential-movement check.</p>
-        <span class="open">Open →</span>
-      </a>
+      <a class="card" href="/osd-tank/"><span class="bar"></span><span class="badge">OSD · WSUD</span><h2>OSD / Rainwater Tank</h2><p>Detention storage estimate &amp; rainwater-tank sizing.</p><span class="open">Open →</span></a>
 
-      <a class="card" href="/eaves-gutter/">
-        <span class="bar"></span>
-        <span class="badge">AS/NZS 3500.3</span>
-        <h2>Eaves Gutter &amp; Downpipe Sizing</h2>
-        <p>Roof catchment + rainfall → design flow, number of downpipes required, and an eaves-gutter capacity check (5% AEP, practical minimum flow).</p>
-        <span class="open">Open →</span>
-      </a>
+      <a class="card" href="/slab-deflection/"><span class="bar"></span><span class="badge">AS 3600</span><h2>Concrete Slab Deflection</h2><p>Detailed deflection of slabs &amp; beams; cantilever option.</p><span class="open">Open →</span></a>
 
-      <a class="card" href="/load-combinations/">
-        <span class="bar"></span>
-        <span class="badge">AS 1170.0</span>
-        <h2>Load Combinations</h2>
-        <p>ULS (strength) &amp; SLS action combinations for G, Q, W, S, E — governing gravity case and net uplift, ψ factors by occupancy.</p>
-        <span class="open">Open →</span>
-      </a>
+      <a class="card" href="/rc-strength/"><span class="bar"></span><span class="badge">AS 3600</span><h2>RC Beam / Slab Strength</h2><p>Ultimate bending φM<sub>u</sub> &amp; shear φV<sub>u</sub>.</p><span class="open">Open →</span></a>
 
-      <a class="card" href="/wind-load/">
-        <span class="bar"></span>
-        <span class="badge">AS 4055 · AS 1170.2</span>
-        <h2>Wind Classification &amp; Pressures</h2>
-        <p>Housing wind class (N1–N6 / C1–C4) → design gust speeds → design pressures p = 0.5·ρ·V²·C<sub>fig</sub>·C<sub>dyn</sub> with shape-factor presets.</p>
-        <span class="open">Open →</span>
-      </a>
+      <a class="card" href="/steel-beam/"><span class="bar"></span><span class="badge">AS 4100</span><h2>Steel Beam / Lintel</h2><p>Member capacity (φM<sub>b</sub>, φV<sub>v</sub>) &amp; deflection.</p><span class="open">Open →</span></a>
 
-      <a class="card" href="/roof-tiedown/">
-        <span class="bar"></span>
-        <span class="badge">AS 1684 · AS 1170</span>
-        <h2>Roof Tie-down / Uplift</h2>
-        <p>Net wind uplift over the tributary area less 0.9× dead → tie-down force at each connection (batten → rafter → wall → footing).</p>
-        <span class="open">Open →</span>
-      </a>
+      <a class="card" href="/timber-beam/"><span class="bar"></span><span class="badge">AS 1720.1</span><h2>Timber Beam / Bearer</h2><p>Bending, shear &amp; long-term deflection.</p><span class="open">Open →</span></a>
 
-      <a class="card" href="/footing-design/">
-        <span class="bar"></span>
-        <span class="badge">AS 2870 · AS 3600</span>
-        <h2>Pad / Strip Footing Design</h2>
-        <p>Bearing pressure, flexural reinforcement, punching &amp; one-way shear for isolated pad or strip footings.</p>
-        <span class="open">Open →</span>
-      </a>
+      <a class="card" href="/footing-design/"><span class="bar"></span><span class="badge">AS 2870 · 3600</span><h2>Pad / Strip Footing</h2><p>Bearing, reinforcement, punching &amp; one-way shear.</p><span class="open">Open →</span></a>
 
-      <a class="card" href="/rc-strength/">
-        <span class="bar"></span>
-        <span class="badge">AS 3600</span>
-        <h2>RC Beam / Slab Strength</h2>
-        <p>Ultimate bending φM<sub>u</sub> and shear φV<sub>u</sub> of a rectangular reinforced section — the strength companion to the deflection tool.</p>
-        <span class="open">Open →</span>
-      </a>
+      <a class="card" href="/retaining-wall/"><span class="bar"></span><span class="badge">AS 4678 · 3600</span><h2>Cantilever Retaining Wall</h2><p>Overturning, sliding &amp; bearing stability.</p><span class="open">Open →</span></a>
 
-      <a class="card" href="/steel-beam/">
-        <span class="bar"></span>
-        <span class="badge">AS 4100</span>
-        <h2>Steel Beam / Lintel</h2>
-        <p>Section φM<sub>s</sub>, member φM<sub>b</sub>, shear φV<sub>v</sub> and deflection — enter the section properties.</p>
-        <span class="open">Open →</span>
-      </a>
+      <a class="card" href="/pier-capacity/"><span class="bar"></span><span class="badge">AS 2159</span><h2>Bored Pier / Pile</h2><p>Shaft friction + end bearing capacity.</p><span class="open">Open →</span></a>
 
-      <a class="card" href="/timber-beam/">
-        <span class="bar"></span>
-        <span class="badge">AS 1720.1</span>
-        <h2>Timber Beam / Bearer / Lintel</h2>
-        <p>Capacity-factor method: bending M<sub>d</sub>, shear V<sub>d</sub> and long-term deflection, with MGP/F-grade presets.</p>
-        <span class="open">Open →</span>
-      </a>
+      <a class="card" href="/geotech-analyser/"><span class="bar"></span><span class="badge">AS 2870</span><h2>Geotech Report Analyser</h2><p>Pull key parameters from a geotech PDF, in-browser.</p><span class="open">Open →</span></a>
 
-      <a class="card" href="/retaining-wall/">
-        <span class="bar"></span>
-        <span class="badge">AS 4678 · AS 3600</span>
-        <h2>Cantilever Retaining Wall</h2>
-        <p>Global stability — overturning, sliding and bearing — for a cantilever retaining wall (per m run).</p>
-        <span class="open">Open →</span>
-      </a>
+      <a class="card" href="/tree-influence/"><span class="bar"></span><span class="badge">AS 2870 · App. H</span><h2>Tree Influence Check</h2><p>Tree proximity &amp; rigid-raft movement on reactive soil.</p><span class="open">Open →</span></a>
 
-      <a class="card" href="/pier-capacity/">
-        <span class="bar"></span>
-        <span class="badge">AS 2159</span>
-        <h2>Bored Pier / Pile Capacity</h2>
-        <p>Geotechnical capacity = shaft friction + end bearing (clay or sand), with allowable via FoS or φ<sub>g</sub>.</p>
-        <span class="open">Open →</span>
-      </a>
+      <a class="card" href="/wind-load/"><span class="bar"></span><span class="badge">AS 4055 · 1170.2</span><h2>Wind Class &amp; Pressures</h2><p>Housing wind class → design pressures.</p><span class="open">Open →</span></a>
 
-      <a class="card" href="/osd-tank/">
-        <span class="bar"></span>
-        <span class="badge">OSD · WSUD</span>
-        <h2>OSD / Rainwater Tank Sizing</h2>
-        <p>On-site detention storage estimate, and rainwater-tank yield &amp; suggested size from roof area, rainfall and demand.</p>
-        <span class="open">Open →</span>
-      </a>
+      <a class="card" href="/load-combinations/"><span class="bar"></span><span class="badge">AS 1170.0</span><h2>Load Combinations</h2><p>ULS &amp; SLS action combinations; uplift.</p><span class="open">Open →</span></a>
+
+      <a class="card" href="/roof-tiedown/"><span class="bar"></span><span class="badge">AS 1684 · 1170</span><h2>Roof Tie-down / Uplift</h2><p>Net wind uplift &amp; tie-down force per connection.</p><span class="open">Open →</span></a>
 
     </div>
 
     <div class="foot">
-      Mayfair Compliance Solutions · engineering calculation aids for the design engineer.<br>
-      Outputs are aids only — verify against the relevant Australian Standards and project documentation; they do not constitute design certification or regulatory approval.
+      G C Gebert Consulting Engineers · Civil &amp; Structural Engineers<br>
+      Calculation aids only — verify against the relevant Australian Standards; not design certification.
     </div>
   </div>
 
